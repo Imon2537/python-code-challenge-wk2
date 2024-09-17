@@ -109,7 +109,7 @@ class Order:
     @property
     def customer(self):
         return self._customer
-    # this setter method ensures that the customer is a valid customer instance
+    # this setter method ensures that the new customer is a valid customer instance
     @customer.setter
     def customer(self, new_customer):
         if isinstance(new_customer, Customer):
@@ -118,7 +118,7 @@ class Order:
     @property
     def coffee(self):
         return self._coffee
-    # this setter method ensures that the coffee is a valid customer instance
+    # this setter method ensures that the new coffee is a valid customer instance
     @coffee.setter
     def coffee(self, new_coffee):
         if isinstance(new_coffee, Coffee):
@@ -155,3 +155,5 @@ if __name__ == "__main__":
     john.coffees()
     jane.orders()
     jane.coffees()
+    
+    
